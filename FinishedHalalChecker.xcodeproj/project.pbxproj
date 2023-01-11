@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041E5AC9296F3ADC00267C6E /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E5AC8296F3ADC00267C6E /* Header.swift */; };
+		041E5ACC296F477000267C6E /* TakePicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E5ACB296F477000267C6E /* TakePicViewController.swift */; };
+		0482641166CF8AE5D16C50ED /* Pods_FinishedHalalChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F682749E4419BAEE57D604 /* Pods_FinishedHalalChecker.framework */; };
 		04BCF43F295AC29100A420B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCF43E295AC29100A420B6 /* AppDelegate.swift */; };
 		04BCF441295AC29100A420B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCF440295AC29100A420B6 /* SceneDelegate.swift */; };
 		04BCF443295AC29100A420B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCF442295AC29100A420B6 /* ViewController.swift */; };
@@ -14,9 +17,12 @@
 		04BCF449295AC29100A420B6 /* FinishedHalalChecker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04BCF447295AC29100A420B6 /* FinishedHalalChecker.xcdatamodeld */; };
 		04BCF44B295AC29200A420B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BCF44A295AC29200A420B6 /* Assets.xcassets */; };
 		04BCF44E295AC29200A420B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BCF44C295AC29200A420B6 /* LaunchScreen.storyboard */; };
+		04BCF486295E50A100A420B6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BCF485295E50A100A420B6 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041E5AC8296F3ADC00267C6E /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		041E5ACB296F477000267C6E /* TakePicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePicViewController.swift; sourceTree = "<group>"; };
 		04BCF43B295AC29100A420B6 /* FinishedHalalChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinishedHalalChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BCF43E295AC29100A420B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04BCF440295AC29100A420B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,10 @@
 		04BCF44A295AC29200A420B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04BCF44D295AC29200A420B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BCF44F295AC29200A420B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BCF485295E50A100A420B6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		32BAB341F79BC43311A38C8E /* Pods-FinishedHalalChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinishedHalalChecker.debug.xcconfig"; path = "Target Support Files/Pods-FinishedHalalChecker/Pods-FinishedHalalChecker.debug.xcconfig"; sourceTree = "<group>"; };
+		428FA54AFF88AA10BBDC216C /* Pods-FinishedHalalChecker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinishedHalalChecker.release.xcconfig"; path = "Target Support Files/Pods-FinishedHalalChecker/Pods-FinishedHalalChecker.release.xcconfig"; sourceTree = "<group>"; };
+		81F682749E4419BAEE57D604 /* Pods_FinishedHalalChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinishedHalalChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0482641166CF8AE5D16C50ED /* Pods_FinishedHalalChecker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041E5AC5296ECC6E00267C6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		041E5AC6296F3A7600267C6E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				04BCF485295E50A100A420B6 /* TableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		041E5AC7296F3A8000267C6E /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				041E5AC8296F3ADC00267C6E /* Header.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		041E5ACA296F472D00267C6E /* TakePicViewController */ = {
+			isa = PBXGroup;
+			children = (
+				041E5ACB296F477000267C6E /* TakePicViewController.swift */,
+			);
+			path = TakePicViewController;
+			sourceTree = "<group>";
+		};
 		04BCF432295AC29100A420B6 = {
 			isa = PBXGroup;
 			children = (
 				04BCF43D295AC29100A420B6 /* FinishedHalalChecker */,
 				04BCF43C295AC29100A420B6 /* Products */,
+				42C999B9C436CA3D8D1342A5 /* Pods */,
+				CF9EEB955C73935CB08661A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +102,69 @@
 		04BCF43D295AC29100A420B6 /* FinishedHalalChecker */ = {
 			isa = PBXGroup;
 			children = (
-				04BCF43E295AC29100A420B6 /* AppDelegate.swift */,
-				04BCF440295AC29100A420B6 /* SceneDelegate.swift */,
-				04BCF442295AC29100A420B6 /* ViewController.swift */,
-				04BCF444295AC29100A420B6 /* Main.storyboard */,
+				04BCF483295E4D8100A420B6 /* App */,
+				041E5AC5296ECC6E00267C6E /* Model */,
+				04BCF481295E4D6400A420B6 /* View */,
+				04BCF482295E4D7200A420B6 /* Controller */,
 				04BCF44A295AC29200A420B6 /* Assets.xcassets */,
-				04BCF44C295AC29200A420B6 /* LaunchScreen.storyboard */,
 				04BCF44F295AC29200A420B6 /* Info.plist */,
 				04BCF447295AC29100A420B6 /* FinishedHalalChecker.xcdatamodeld */,
 			);
 			path = FinishedHalalChecker;
+			sourceTree = "<group>";
+		};
+		04BCF481295E4D6400A420B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04BCF44C295AC29200A420B6 /* LaunchScreen.storyboard */,
+				04BCF444295AC29100A420B6 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04BCF482295E4D7200A420B6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04BCF484295E508400A420B6 /* ViewController */,
+				041E5ACA296F472D00267C6E /* TakePicViewController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04BCF483295E4D8100A420B6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				04BCF440295AC29100A420B6 /* SceneDelegate.swift */,
+				04BCF43E295AC29100A420B6 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		04BCF484295E508400A420B6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04BCF442295AC29100A420B6 /* ViewController.swift */,
+				041E5AC7296F3A8000267C6E /* Header */,
+				041E5AC6296F3A7600267C6E /* Cell */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		42C999B9C436CA3D8D1342A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32BAB341F79BC43311A38C8E /* Pods-FinishedHalalChecker.debug.xcconfig */,
+				428FA54AFF88AA10BBDC216C /* Pods-FinishedHalalChecker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF9EEB955C73935CB08661A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81F682749E4419BAEE57D604 /* Pods_FinishedHalalChecker.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04BCF452295AC29200A420B6 /* Build configuration list for PBXNativeTarget "FinishedHalalChecker" */;
 			buildPhases = (
+				AE149E71C45C936728E1E8A2 /* [CP] Check Pods Manifest.lock */,
 				04BCF437295AC29100A420B6 /* Sources */,
 				04BCF438295AC29100A420B6 /* Frameworks */,
 				04BCF439295AC29100A420B6 /* Resources */,
+				3E0ABDD8184048346A5972D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,14 +235,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E0ABDD8184048346A5972D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinishedHalalChecker/Pods-FinishedHalalChecker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinishedHalalChecker/Pods-FinishedHalalChecker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinishedHalalChecker/Pods-FinishedHalalChecker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE149E71C45C936728E1E8A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinishedHalalChecker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04BCF437295AC29100A420B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BCF486295E50A100A420B6 /* TableViewCell.swift in Sources */,
 				04BCF443295AC29100A420B6 /* ViewController.swift in Sources */,
 				04BCF43F295AC29100A420B6 /* AppDelegate.swift in Sources */,
 				04BCF449295AC29100A420B6 /* FinishedHalalChecker.xcdatamodeld in Sources */,
+				041E5AC9296F3ADC00267C6E /* Header.swift in Sources */,
+				041E5ACC296F477000267C6E /* TakePicViewController.swift in Sources */,
 				04BCF441295AC29100A420B6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +430,7 @@
 		};
 		04BCF453295AC29200A420B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32BAB341F79BC43311A38C8E /* Pods-FinishedHalalChecker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +459,7 @@
 		};
 		04BCF454295AC29200A420B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 428FA54AFF88AA10BBDC216C /* Pods-FinishedHalalChecker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
